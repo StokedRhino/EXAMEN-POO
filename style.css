@@ -1,0 +1,132 @@
+/* ====== GENERAL ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* ====== TITULO ====== */
+.titulo {
+    background-color: #ffffff;
+    border-top: 8px solid #f01313; /* morado */
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* ====== TARJETA DE PREGUNTA ====== */
+.campo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* ====== TEXTO DE PREGUNTA ====== */
+.pregunta {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* ====== OPCIONES ====== */
+.opcionQuiz {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.opcionQuiz input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #403f42; /* morado */
+}
+
+/* ====== TEXTAREA (preguntas escritas) ====== */
+textarea {
+    width: 100%;
+    min-height: 90px;
+    border-radius: 6px;
+    border: 1px solid #dadce0;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    font-size: 14px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #474747;
+}
+
+/* ====== BLOQUES DE CÓDIGO ====== */
+pre {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 13px;
+    overflow-x: auto;
+    margin-bottom: 12px;
+}
+
+/* ====== BOTÓN ====== */
+button {
+    background-color: #4a4a4b;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #535353;
+}
+
+/* ====== RESULTADO ====== */
+#resultado {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ===== ESTADO DE LA PREGUNTA ===== */
+
+.campo.correcta {
+    background-color: #e6f4ea;
+    border-left: 6px solid #34a853;
+}
+
+.campo.incorrecta {
+    background-color: #fce8e6;
+    border-left: 6px solid #ea4335;
+}
+
+.campo.sin-responder {
+    background-color: #f1f3f4;
+    border-left: 6px solid #9aa0a6;
+}
+
+/* ===== OPCIONES ===== */
+
+.opcion-correcta {
+    color: #188038;
+    font-weight: 600;
+}
+
+.opcion-incorrecta {
+    color: #d93025;
+    font-weight: 600;
+}
